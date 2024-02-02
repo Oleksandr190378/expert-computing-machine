@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "assistant"
+version = "0.1.0"
+description = "phone assistant"
+authors = ["Oleksandr190378 <147439788+Oleksandr190378@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
