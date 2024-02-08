@@ -11,10 +11,6 @@ def factorize(n):
     return rez
 
 
-def callback(result):
-    print(f"Result in callback: {result}")
-
-
 if __name__ == "__main__":
     input_data = input('Enter list of digits: ')
     data_list1 = input_data.split(',')
@@ -44,3 +40,4 @@ if __name__ == "__main__":
     print(f'End {current_process().name}')
     end_time2 = time() - start_time2
     print(f"Time of single process : {end_time2}")
+    
