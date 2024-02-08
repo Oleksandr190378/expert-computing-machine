@@ -1,6 +1,7 @@
 from multiprocessing import Pool, current_process, cpu_count
 from time import  time
 
+
 def factorize(n):
     rez = []
     for i in range(1, n//2):
@@ -20,9 +21,8 @@ if __name__ == "__main__":
     start_time = time()
     with Pool(cpu_count()) as p:
         p.map_async(factorize, data_list, )
-        #p.map(factorize, data_list)
-        p.close()  # перестати виділяти процеси в пулл
-        p.join()  # дочекатися закінчення всіх процесів
+        p.close() 
+        p.join()  
     print(f'End {current_process().name}')
     end_time1 = time() - start_time
     print(f"Time of pool map async process : {end_time1}")
