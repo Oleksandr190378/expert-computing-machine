@@ -15,7 +15,7 @@ else:
     output = Path(input_result)   
 
 source = Path(input_source)
-print(source,  output)
+print(source, ' - ',  output)
 folders = []
 
 
